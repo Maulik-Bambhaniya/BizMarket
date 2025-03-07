@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ProfileSetup from "./pages/ProfileSetup";
 import NotFound from "./pages/NotFound";
+import DigitalMarketingFlyer from "./pages/DigitalMarketingFlyer.tsx"; // Import the DigitalMarketingFlyer component
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/businesses" element={<Businesses />} />
           <Route path="/agencies" element={<Agencies />} />
           <Route path="/poster-creator" element={<PosterCreator />} />
+          <Route path="/editor" element={<DigitalMarketingFlyer />} /> {/* Add the /editor route */}
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
