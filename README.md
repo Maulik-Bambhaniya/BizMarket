@@ -1,5 +1,5 @@
 # BizMarket
-videos explanation https://drive.google.com/drive/folders/1voJx01cOUy3T4zGiqsus1tXGvm838RBc?usp=sharing
+Explanation Videos :- https://drive.google.com/drive/folders/1voJx01cOUy3T4zGiqsus1tXGvm838RBc?usp=sharing
 ## 🚀 Overview
 **BizMarket** is a web platform designed to connect **small businesses** with **marketing agencies**, providing seamless collaboration for marketing needs. Our platform enables businesses to find the right marketing professionals, chat with them, and even leverage AI-powered tools to create marketing posters. 
 
