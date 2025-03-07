@@ -57,7 +57,14 @@ const Login = () => {
                 localStorage.setItem('user', JSON.stringify(userData));
                 toast.success('Login successful!');
 
-                navigate('/profile-setup'); // Navigate to profile setup
+                // Redirect based on userType
+                if (userType === 1) {
+                    navigate('/businesses'); // Business user
+                } else if (userType === 2) {
+                    navigate('/agencies'); // Agency user
+                } else {
+                    navigate('/profile-setup'); // New user or default case
+                }
             } else {
                 toast.error('Login failed');
             }
@@ -147,9 +154,7 @@ const Login = () => {
 
                     <div className="mt-6 text-center text-white text-opacity-80 text-sm">
                         Don't have an account? <Link to="/register" className="text-blue-300 hover:text-blue-200 transition-colors">Register Now</Link>
-                    </div>
-
-                    <div className="flex justify-center space-x-4 mt-6">
+                    </div>... <div className="flex justify-center space-x-4 mt-6">
                         <button
                             type="button"
                             className="p-2 bg-[#3b5998] rounded-full text-white hover:opacity-90 transition-opacity"
